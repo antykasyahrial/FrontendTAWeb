@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Our Church is a premium HTML5 Church Website Template with Responsive design. Church Template includes many pages like Bulletin, Programs, events, sermons, ministries, working church contact form etc..">
+  <meta name="keywords"
+    content="Church, Website, Template, Bulletin, Programs, Events, Themeforest, Premium, Charity, Non Profit ">
+  <meta name="author" content="Surjith SM">
+  <title>SiRavid</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Church Template CSS -->
+  <link href="css/church.css" rel="stylesheet">
+  <link href="css/fancybox.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/SiRavid.png">
+
+  <!-- Custom Google Font : Montserrat and Droid Serif -->
+
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!-- Navigation Bar Starts -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span
+            class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"> <img src="images/SiRavid.png">SiRavid<class="img-responsive"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li class="active"><a href="tulisan.html">TULISAN</a></li>
+          <li><a href="rsrujukan.html">RS RUJUKAN</a></li>
+          <li><a href="edukasi.html">EDUKASI</a></li>
+          <li><a href="link.html">LINK</a></li>
+          <li><a href="profil.html">PROFIL</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+
+    </div>
+  </div>
+  <!--// Navbar Ends-->
+
+  <!--SUBPAGE HEAD-->
+
+  <div class="subpage-head has-margin-bottom">
+    <div class="container">
+      <h3>Tulisan</h3>
+      <p class="lead">Tulis Sesuatu Disini :). </p>
+    </div>
+  </div>
+
+  <!-- // END SUBPAGE HEAD -->
+
+  <!--// col md 9-->
+
+  <!--Latest Sermons-->
+
+
+  <!-- OUR TEAM -->
+  <!-- <div class="container">
+    <div class="section-title">
+      <h4> TULISANKU </h4>
+    </div><div class="section-title">
+      <a href="#" class="btn btn-primary" onClick="callInputModal('Add Tulisan')">Tambahkan Tulisan</a>
+    </div>
+    <div class="container ">
+      <div class="row feature-block">
+        <div class="col-md-4 col-sm-6 has-margin-bottom"> <img class="img-responsive" src="images/thumb-1.jpg"
+            alt="catholic church">
+          <h3>Judul</h3>
+          <h5>Penulis</h5>
+          <p>Deskripsi</p>
+          <p>Tanggal</p>
+        </br>
+          <p><a href="about.html" role="button">View details →</a></p>
+        </div>
+      </div>
+    </div> -->
+  <center>
+    <div class="container">
+      <p>
+        <a href="#" class="btn btn-success my-2" onClick="callInputModal('Add Tulisan')">Tambahkan Tulisan</a>
+      </p>
+    </div>
+  </center>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <h1 class="jumbotron-heading" id="title-page"></h1>
+          <div class="row" id="tulisan-items">
+            <div class="col-md-4 tulisan-item" style="display: none;" id="tulisan-item">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" id="card-img" src="assets/images/" alt="Card image cap">
+                <div class="card-body">
+                  <b class="card-title" id="card-title">Title</b><br>
+                  <p class="card-text" id="card-description"></p>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" id="view-detail" class="btn btn-sm btn-outline-secondary"
+                        onClick="callModal('a','b','c')">View</button>
+                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                    </div>
+                    <small class="text-muted" id="card-date">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- // END OUR TEAM -->
+
+    <!-- // Detail Modal -->
+    <div class="modal fade" id="tulisanDetailModal" tabindex="-1" role="dialog" arialabelledby="tulisanDetailLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top" src="images/thumb-1.jpg" id="modal-img" alt="Card image cap">
+            <p class="card-text" id="modal-description"></p>
+            <!-- <small class="text-muted" id="modal-name">Nama</small> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="tulisanInputModal" tabindex="-1" role="dialog" arialabelledby="tulisanInputModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-input-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="modal-input-form" enctype="multipart/form-data">
+              <!-- <input type="hidden" class="form-control" id="modal-input-form-quote-id" name="id"> -->
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="modal-input-form-title" placeholder="Title.." name="title"
+                    required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="modal-input-form-description" rows="5" placeholder="Description..."
+                    name="description" required></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                  <input type="file" name="imagename" class="form-control-file" id="modal-input-form-image">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                  <img class="card-img-top" id="modal-input-show-img">
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" id="modal-input-form-submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBSCRIBE -->
+
+    <!-- END SUBSCRIBE -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <h5>ABOUT THE CHURCH</h5>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <h5>QUICK LINKS</h5>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <h5>OUR ADDRESS</h5>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <h5>CONNECT</h5>
+            <div class="social-icons"><a href="#"><img src="images/fb-icon.png" alt="social"></a> <a href="#"><img
+                  src="images/tw-icon.png" alt="social"></a> <a href="#"><img src="images/in-icon.png" alt="social"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p class="text-center">Copyright © 2014 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ketchup.all.js"></script>
+
+    <!--============== SUBSCRIBE FORM =================-->
+    <script>
+      function getTulisan() {
+        $.ajaxSetup({
+          cache: false
+        });
+        var url = "http://antykasyahrial.if05c.xyz/tubesweb/api/tulisan";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            beforeSend: function (xhr) {
+              xhr.overrideMimeType("text/plain; charset=x-user-defined");
+            },
+            error: function (xhr, status, error) {
+              console.log(xhr);
+            }
+          })
+          .done(function (data) {
+            myData = JSON.parse(data);
+            for (i = 0; i < myData.length; i++) {
+              $.ajaxSetup({
+                cache: false
+              });
+              var item = $("#tulisan-item").clone();
+              item.find('#card-title').html(myData[i].judul_tulisan);
+              item.find('#card-description').html(myData[i].deskripsi_tulisan);
+              item.removeAttr("style");
+              item.find('#card-img').attr('src', 'http://antykasyahrial.if05c.xyz/tubesweb/' + myData[i]
+                .gambar_tulisan);
+              item.find('#card-date').html(myData[i].created_at);
+              item.find('#view-detail').attr('onClick', 'callModal("' + myData[i].judul_tulisan + '", "' + myData[i]
+                .deskripsi_tulisan + '", "http://antykasyahrial.if05c.xyz/tubesweb/' + myData[i].gambar_tulisan +
+                '" )');
+              item.appendTo("#tulisan-items");
+            }
+          });
+      }
+      $(document).ready(function () {
+        getTulisan('http://antykasyahrial.if05c.xyz/tubesweb/api/tulisan');
+      })
+
+      function callModal(judul_tulisan, deskripsi_tulisan, gambar_tulisan) {
+        $('#tulisanDetailModal').modal('show');
+        $("#modal-title").html(judul_tulisan);
+        $("#modal-description").html(deskripsi_tulisan);
+        $("#modal-img").attr('src', gambar_tulisan);
+      }
+
+      function callInputModal(judul_tulisan, deskripsi_tulisan = "", gambar_tulisan = "", id = "") {
+        $('#tulisanInputModal').modal('show');
+        $("#modal-input-title").html(judul_tulisan);
+        // $("#modal-input-form-quote-id").val(id);
+        $("#modal-input-form-image").val('');
+        $("#modal-input-form-description").val(deskripsi_tulisan);
+        $("#modal-input-show-img").attr('src', gambar_tulisan);
+      }
+
+      function insertTulisan(data) {
+        $.ajax({
+            type: 'POST',
+            url: "http://antykasyahrial.if05c.xyz/tubesweb/api/tulisan",
+            dataType: "JSON",
+            data: new FormData(data),
+            processData: false,
+            contentType: false,
+            beforeSend: function (xhr) {
+              xhr.overrideMimeType("text/plain; charset=x-user-defined");
+            },
+            error: function (xhr, status, error) {
+              console.log(xhr);
+            }
+          })
+          .done(function (data) {
+            console.log(data);
+            getTulisan('http://antykasyahrial.if05c.xyz/tubesweb/api/tulisan');
+            $('#tulisanInputModal').modal('toggle');
+          });
+      }
+
+      function readURL(input) {
+        $('#modal-input-form').submit(function (e) {
+          e.preventDefault();
+          var formData = $(this).serializeArray();
+          if (formData[0].value == "") {
+            insertTulisan(this);
+          } else {
+            updateTulisan(this);
+          }
+        });
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $('#modal-input-show-img').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+
+    <!--============== SUBSCRIBE FORM =================-->
+
+    <script>
+      $(document).ready(function () {
+        $('#subscribeForm').ketchup().submit(function () {
+          if ($(this).ketchup('isValid')) {
+            var action = $(this).attr('action');
+            $.ajax({
+              url: action,
+              type: 'POST',
+              data: {
+                email: $('#address').val()
+              },
+              success: function (data) {
+                $('#result').html(data);
+              },
+              error: function () {
+                $('#result').html('Sorry, an error occurred.');
+              }
+            });
+          }
+          return false;
+        });
+      });
+    </script>
+</body>
+
+</html>

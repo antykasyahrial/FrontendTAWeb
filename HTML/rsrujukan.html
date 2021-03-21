@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/img/favicon.png">
+  <title>RS Rujukan - SiRavid</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Church Template CSS -->
+<link href="css/church.css" rel="stylesheet">
+<link href="css/fancybox.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="images/SiRavid.png">
+
+<!-- Custom Google Font : Montserrat and Droid Serif -->
+
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+  <style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  #pala{
+    padding-top: 100px;
+  }
+
+</style>
+</head>
+
+<body>
+  <header>
+  <!-- Navigation Bar Starts -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span
+            class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"> <img src="images/SiRavid.png">SiRavid<class="img-responsive"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="tulisan.html">TULISAN</a></li>
+          <li class="active"><a href="rsrujukan.html">RS RUJUKAN</a></li>
+          <li><a href="edukasi.html">EDUKASI</a></li>
+          <li><a href="link.html">LINK</a></li>
+          <li><a href="profil.html">PROFIL</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+
+    </div>
+  </div>
+  <!--// Navbar Ends-->
+  </header>
+
+<main role="main">
+
+  <section id="pala" class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">RS Rujukan</h1>
+      <p class="lead text-muted">Daftar Rumah Sakit Rujukan</p>
+    </div>
+  </section>
+
+<div class="album py-5 bg-light">
+ <div class="container">
+    <h1 class="jumbotron-heading" id="title-page"></h1>
+      <div class="row" id="edukasi-items">
+        <div class="col-md-4 edukasi-item" style="display:none;" id="edukasi-item">
+          <div class="card mb-4 box-shadow">
+            <div class="card-body">
+              <b class="card-title" id="card-title">Title</b><br>
+              <p class="card-text" style="text-align:left;padding-left:12px;" id="card-description"></p>
+              <p class="card-text" style="text-align:left;padding-left:12px;" id="card-website"></p>
+              <p class="card-text" style="text-align:left;padding-left:12px;" id="card-nohp"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="view-detail" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted" id="card-date">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container p-3">
+    <p class="float-right">
+      <p class="text-center mt-2"></p>
+      <a href="#">Back to top</a>
+    
+  </div>
+</footer>
+<!-- Modal Input-->
+<div class="modal fade" id="quoteInputModal" tabindex="-1" role="dialog" aria-labelledby="quoteInputModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-input-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+        <form id="modal-input-form" enctype="multipart/form-data">
+          <input type="hidden" class="form-control" id="modal-input-form-film-id" name="film_id">
+          <input type="hidden" class="form-control" id="modal-input-form-student-id" name="student_id">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">film Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="modal-input-form-name" placeholder="Name"
+              name="film_name" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Deskripsi</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="modal-input-form-description" rows="5"
+              placeholder="Deskripsi" name="description" required></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Genre</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="modal-input-form-genre"
+              placeholder="genre" name="genre" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Image</label>
+            <div class="col-sm-10">
+              <input type="file" name="image" class="form-control-file" id="modal-input-form-image">
+            </div>
+          </div>
+        <div class="modal-footer">
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="quoteDetailModal" tabindex="-1" role="dialog" aria- labelledby="quoteDetailLabel"
+aria-hidden="true">
+
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="modal-title">Modal title</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <small class="text-muted" id="modal-name" text-align="center">Nama</small>
+      <p class="card-text" id="modal-film-id"></p>
+      <p class="card-text" id="modal-description"></p>
+      <p class="card-text" id="modal-genre"></p>
+      <p class="card-text" id="modal-created"></p>
+      <p class="card-text" id="updated"></p>
+      <p class="card-text float-right" id="modal-author">Author</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../node_modules/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+  function getEdukasi(){
+    var url = "http://antykasyahrial.if05c.xyz/tubesweb/api/hospital";
+    $.ajax({
+    type: 'GET',
+    url: url,
+    beforeSend: function( xhr ) {
+      xhr.overrideMimeType( "text/plain; charset=x-user-defined" );
+    },
+    error: function(xhr, status, error) {
+      console.log(xhr);
+    }
+    })
+    .done(function(data) {
+      myData = JSON.parse(data);
+      for (i = 0; i < myData.length; i++) {
+        var item = $( "#edukasi-item" ).clone();
+        item.find('#card-title').html(myData[i].nama_rs);
+        item.removeAttr( "style" );
+        item.find('#card-description').html("Alamat: "+myData[i].alamat_rs);
+        item.find('#card-website').html("Website: "+myData[i].website_rs);
+        item.find('#card-nohp').html("Telp: "+myData[i].no_hp);
+        item.find('#card-date').html(myData[i].created_at);
+        item.appendTo("#edukasi-items");
+      }
+  }); 
+}
+
+  $(document).ready(function(){
+    getEdukasi();
+  })
+</script>
+</body>
+</html>
